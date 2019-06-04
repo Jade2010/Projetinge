@@ -1,0 +1,114 @@
+{
+ "thème": "Cinéma",
+ "questions": [{
+   "question": "Quel film n'a pas été tourné à Saint-etienne ?",
+   "responses": [{
+     "reponse": "Noce blanche",
+     "vrai": "oui"
+    }, {
+	"reponse": "Noce blanche",
+     "vrai": "non"
+    }, {
+	"reponse": "Le Brasier",
+     "vrai": "non"
+	}, {
+	"reponse": "Capitaine ACHAB",
+     "vrai": "non"
+	}
+   ]}
+   , 
+   {
+    "question": "Combien y a t-il de cinemas à saint-etienne?",
+   "responses": [{
+     "reponse": "5",
+     "vrai": "oui"
+    }, {
+	"reponse": "3",
+     "vrai": "non"
+    }, {
+	"reponse": "2",
+     "vrai": "non"
+	}, {
+	"reponse": "8",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quel cinéma indépendant est doté d'un café et propose des séances privées?",
+   "responses": [{
+     "reponse": "Le mélies Jean Jaurès",
+     "vrai": "oui"
+    }, {
+	"reponse": "L'Alhambra",
+     "vrai": "non"
+    }, {
+	"reponse": "Le camion rouge",
+     "vrai": "non"
+	}, {
+	"reponse": "Le théâtre",
+     "vrai": "non"
+	}
+   ]
+   } ,{
+    "question": "Quels cinémas sont situés place Jean Jaurès ?",
+   "responses": [{
+     "reponse": "L'Alhambra et le mélies",
+     "vrai": "oui"
+    }, {
+	"reponse": "Le camion rouge et l'ahlambra",
+     "vrai": "non"
+    }, {
+	"reponse": "Le théatre et le camion Rouge",
+     "vrai": "non"
+	}, {
+	"reponse": "L'Alhambra et le théâtre",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quel cinéma possède la plus grande salle?",
+   "responses": [{
+     "reponse": "L'Alhambra",
+     "vrai": "oui"
+    }, {
+	"reponse": "Le theâtre",
+     "vrai": "non"
+    }, {
+	"reponse": "Le camion rouge",
+     "vrai": "non"
+	}, {
+	"reponse": "Le méliès",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quel acteur très connu français s'est marié à Saint-Etienne ?",
+   "responses": [{
+     "reponse": "Louis de Funès",
+     "vrai": "oui"
+    }, {
+	"reponse": "Fernandel",
+     "vrai": "non"
+    }, {
+	"reponse": "Pierre Brasseur",
+     "vrai": "non"
+	}, {
+	"reponse": "Louis Jouvet",
+     "vrai": "non"
+	}
+   ]
+   }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  ]
+ }

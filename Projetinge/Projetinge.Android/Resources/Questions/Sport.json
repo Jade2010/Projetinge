@@ -1,0 +1,114 @@
+{
+ "thème": "Sport",
+ "questions": [{
+   "question": "Quel est le nom du club de football de Saint-etienne ?",
+   "responses": [{
+     "reponse": "ASSE",
+     "vrai": "oui"
+    }, {
+	"reponse": "ASEE",
+     "vrai": "non"
+    }, {
+	"reponse": "ASE",
+     "vrai": "non"
+	}, {
+	"reponse": "ASES",
+     "vrai": "non"
+	}
+   ]}
+   , 
+   {
+    "question": "Quel est le nom du stade de football de Saint-etienne ?",
+   "responses": [{
+     "reponse": "Geoffroy Guichard",
+     "vrai": "oui"
+    }, {
+	"reponse": "Geoffroid Quichard",
+     "vrai": "non"
+    }, {
+	"reponse": "Guillaume Guichard",
+     "vrai": "non"
+	}, {
+	"reponse": "Guillem Ouchard",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quel sportive stéphanoise, spécialiste du pentathlon moderne, a été vice-championne olympique à Rio en 2016 ?",
+   "responses": [{
+     "reponse": "Elodie Clouvel",
+     "vrai": "oui"
+    }, {
+	"reponse": "Eloise Louvel",
+     "vrai": "non"
+    }, {
+	"reponse": "Elise Clouvet",
+     "vrai": "non"
+	}, {
+	"reponse": "Elizabeth Vet",
+     "vrai": "non"
+	}
+   ]
+   } ,{
+    "question": "Quel pôle france féminin est présent à Saint-etienne ?",
+   "responses": [{
+     "reponse": "Gymnastique",
+     "vrai": "oui"
+    }, {
+	"reponse": "Rugby",
+     "vrai": "non"
+    }, {
+	"reponse": "Football",
+     "vrai": "non"
+	}, {
+	"reponse": "Canoë",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quel pôle france élite est présent à Saint-etienne?",
+   "responses": [{
+     "reponse": "Course d'orientation",
+     "vrai": "oui"
+    }, {
+	"reponse": "Ski",
+     "vrai": "non"
+    }, {
+	"reponse": "Football",
+     "vrai": "non"
+	}, {
+	"reponse": "Canoë",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quel club stéphanois de rugby a été en pro d2 lors de la saison 2010/2011 ?",
+   "responses": [{
+     "reponse": "CASE",
+     "vrai": "oui"
+    }, {
+	"reponse": "RCSE",
+     "vrai": "non"
+    }, {
+	"reponse": "AMP",
+     "vrai": "non"
+	}, {
+	"reponse": "BIS",
+     "vrai": "non"
+	}
+   ]
+   }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  ]
+ }

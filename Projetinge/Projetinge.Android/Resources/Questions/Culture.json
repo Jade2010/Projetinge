@@ -1,0 +1,114 @@
+{
+ "thème": "Culture",
+ "questions": [{
+   "question": "En quelle année a ouvert le musée de la mine?",
+   "responses": [{
+     "reponse": "1991",
+     "vrai": "oui"
+    }, {
+	"reponse": "2001",
+     "vrai": "non"
+    }, {
+	"reponse": "1995",
+     "vrai": "non"
+	}, {
+	"reponse": "1996",
+     "vrai": "non"
+	}
+   ]}
+   , 
+   {
+    "question": "Combien de place y a t il au zenith?",
+   "responses": [{
+     "reponse": "7200",
+     "vrai": "oui"
+    }, {
+	"reponse": "60000",
+     "vrai": "non"
+    }, {
+	"reponse": "10000",
+     "vrai": "non"
+	}, {
+	"reponse": "6000",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Combien y a t il de musées à Saint-etienne?",
+   "responses": [{
+     "reponse": "3",
+     "vrai": "oui"
+    }, {
+	"reponse": "2",
+     "vrai": "non"
+    }, {
+	"reponse": "4",
+     "vrai": "non"
+	}, {
+	"reponse": "6",
+     "vrai": "non"
+	}
+   ]
+   } ,{
+    "question": "Quel est le nom officiel du musée de la mine?",
+   "responses": [{
+     "reponse": "Puits Couriot/Parc-Musée de la Mine",
+     "vrai": "oui"
+    }, {
+	"reponse": "Le musée de la mine",
+     "vrai": "non"
+    }, {
+	"reponse": "Le musée de Saint-etienne",
+     "vrai": "non"
+	}, {
+	"reponse": "Parc de la mine",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quel est le nom du Centre de culture scientifique, technique et industrielle?",
+   "responses": [{
+     "reponse": "La Rotonde",
+     "vrai": "oui"
+    }, {
+	"reponse": "Firminy",
+     "vrai": "non"
+    }, {
+	"reponse": "Bellevue",
+     "vrai": "non"
+	}, {
+	"reponse": "La Comédie",
+     "vrai": "non"
+	}
+   ]
+   },{
+    "question": "Quand a été créée la Comédie?",
+   "responses": [{
+     "reponse": "1949",
+     "vrai": "oui"
+    }, {
+	"reponse": "1989",
+     "vrai": "non"
+    }, {
+	"reponse": "2010",
+     "vrai": "non"
+	}, {
+	"reponse": "1896",
+     "vrai": "non"
+	}
+   ]
+   }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  ]
+ }
