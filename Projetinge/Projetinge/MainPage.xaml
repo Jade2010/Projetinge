@@ -6,78 +6,15 @@
 
     <StackLayout>
 
-        <Grid ColumnSpacing="10" Padding="20" RowSpacing="30">
-            <Grid.RowDefinitions>
-                <RowDefinition Height= "Auto" />
-            </Grid.RowDefinitions>
+        <Button Text="JOUER"
+            x:Name="boutonJouer"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            IsVisible="true"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HeightRequest="150"/>
 
-            <!-- Ligne 1 -->
-            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
-                <Label Text="Choisissez le thème de la question" 
-                x:Name="label_"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"/>
-            </ContentView>
-
-
-            <!-- Ligne 2 -->
-            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                <Button Text="SuperBouton1"
-                x:Name="bouton1"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                HeightRequest="150"/>
-
-            </ContentView>
-
-            <ContentView Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                <Button Text="SuperBouton2"
-                x:Name="bouton2"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand" 
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                HeightRequest="150"/>
-
-            </ContentView>
-
-
-            <!-- Ligne 3 -->
-            <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                <Button Text="SuperBouton3"
-                x:Name="bouton3"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand" 
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                HeightRequest="150"/>
-
-            </ContentView>
-
-
-
-            <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                <Button Text="SuperBouton4"
-                x:Name="bouton4"       
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                HeightRequest="150"/>
-
-            </ContentView>
-
-           
-        </Grid>
 
     </StackLayout>
 
