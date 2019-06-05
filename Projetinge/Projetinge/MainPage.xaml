@@ -6,16 +6,17 @@
 
     <StackLayout>
 
-        <Grid ColumnSpacing="10" Padding="20">
+        <Grid ColumnSpacing="10" Padding="20" RowSpacing="30">
             <Grid.RowDefinitions>
-                <RowDefinition Height= "Auto"/>
+                <RowDefinition Height= "Auto" />
             </Grid.RowDefinitions>
 
             <!-- Ligne 1 -->
-            <ContentView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" MinimumHeightRequest="20">
-                <Label Text="Welcome to Xamarin.Forms!" 
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
+                <Label Text="Choisissez le thème de la question" 
+                x:Name="label_"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand"
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"/>
@@ -23,111 +24,61 @@
 
 
             <!-- Ligne 2 -->
-            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="20">
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                 <Button Text="SuperBouton1"
+                x:Name="bouton1"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="End"
+                VerticalOptions="CenterAndExpand"
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"
-                MinimumHeightRequest="210"
-                MinimumWidthRequest="210"/>
+                HeightRequest="150"/>
 
             </ContentView>
 
-            <ContentView Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="20">
+            <ContentView Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                 <Button Text="SuperBouton2"
+                x:Name="bouton2"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="End" 
+                VerticalOptions="CenterAndExpand" 
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"
-                MinimumHeightRequest="350"
-                MinimumWidthRequest="350"/>
+                HeightRequest="150"/>
 
             </ContentView>
 
 
             <!-- Ligne 3 -->
-            <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="20">
+            <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                 <Button Text="SuperBouton3"
+                x:Name="bouton3"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="End" 
+                VerticalOptions="CenterAndExpand" 
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"
-                MinimumHeightRequest="350"
-                MinimumWidthRequest="350"/>
+                HeightRequest="150"/>
 
             </ContentView>
 
 
 
-            <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="20">
+            <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                 <Button Text="SuperBouton4"
+                x:Name="bouton4"       
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="End"
+                VerticalOptions="CenterAndExpand"
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"
-                MinimumHeightRequest="210"
-                MinimumWidthRequest="210"/>
+                HeightRequest="150"/>
 
             </ContentView>
 
-
-
-           
            
         </Grid>
 
-
-        <!--<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="StartAndExpand"
-            IsVisible="true"
-            FontSize="Large"
-            FontAttributes="Bold"/>
-        
-        <Button Text="SuperBouton1"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                MinimumHeightRequest="190"
-                MinimumWidthRequest="190"/>
-        
-        <Button Text="SuperBouton2 mais regardons si je rajoute un peu de texte"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                MinimumHeightRequest="10"
-                MinimumWidthRequest="10"/>
-        
-        <Button Text="SuperBouton3"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                MinimumHeightRequest="210"
-                MinimumWidthRequest="210"/>
-        
-        <Button Text="SuperBouton4"
-                HorizontalOptions="Center"
-                VerticalOptions="End" 
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
-                MinimumHeightRequest="350"
-                MinimumWidthRequest="350"/> -->
-            
-        
-        <!-- Place new controls here -->
-        
     </StackLayout>
 
 </ContentPage>

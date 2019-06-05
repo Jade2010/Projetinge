@@ -10,6 +10,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Button Content="Button" Height="439" Margin="397,277,0,0" VerticalAlignment="Top" Width="702"/>
+        <FlipView>
+            <TextBox x:Name="label_" Text="TextBox" Height="354" IsReadOnly="True"/>
+        </FlipView>
     </Grid>
 </forms:WindowsPage>
