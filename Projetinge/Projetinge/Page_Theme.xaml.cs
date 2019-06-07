@@ -16,7 +16,7 @@ namespace Projetinge
         public Page_Theme()
         {
             InitializeComponent();
-            changerTheme();
+            changerTheme(set_theme());
             bouton1.Clicked += async (sender, args) =>
             {
                 await Navigation.PushAsync(new Page_Questions(bouton1.Text));
@@ -35,10 +35,11 @@ namespace Projetinge
             };
         }
 
-        public String set_theme()
+        public List<String> set_theme()
         {
             String[] themes = Android.App.Application.Context.Assets.List("Questions/");
             List<string> my_list = new List<string>();
+            List<string> result = new List<string>();
             foreach (String file in themes)
             {
                 FileInfo info = new FileInfo(file);
@@ -46,20 +47,25 @@ namespace Projetinge
             }
 
             Random rand = new Random();
-            int question = rand.Next(my_list.Count);
-            return my_list[question];
+            for(int i = 0; i < 4; i++)
+            {
+                int question = rand.Next(my_list.Count);
+                result.Add(my_list[question]);
+                my_list.RemoveAt(question);
+            }
+            return result;
         }
 
         /*role : sert à changer les thèmes marqués sur les boutons et les couleurs 
          * entrée : 4 string qui correspondent aux thèmes à marquer sur les boutons et 4 couleurs pour la couleur du fond des boutons
          * sortie : vide
          */
-        public void changerTheme()
+        public void changerTheme(List<String> list_themes)
         {
-            bouton1.Text = set_theme();
-            bouton2.Text = set_theme();
-            bouton3.Text = set_theme();
-            bouton4.Text = set_theme();
+            bouton1.Text = list_themes[0];
+            bouton2.Text = list_themes[1];
+            bouton3.Text = list_themes[2];
+            bouton4.Text = list_themes[3];
 
             /* bouton1.BackgroundColor = Cbouton1;
              bouton2.BackgroundColor = Cbouton2;
