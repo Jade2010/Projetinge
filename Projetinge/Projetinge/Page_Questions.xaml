@@ -12,6 +12,18 @@
                     <RowDefinition Height= "Auto" />
                 </Grid.RowDefinitions>
 
+                <!-- Ligne 0 : label de thème -->
+                <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Label Text="Thème question" 
+                x:Name="labelTheme"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"
+                FontSize="Large"
+                FontAttributes="Bold"/>
+                </ContentView>
+
+
                 <!-- Ligne 1 -->
                 <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
                     <Label Text="Voici la question" 

@@ -13,7 +13,9 @@
             IsVisible="true"
             FontSize="Large"
             FontAttributes="Bold"
-            HeightRequest="150"/>
+            HeightRequest="200"
+            WidthRequest="200"
+            CornerRadius="100"/>
 
     </StackLayout>
 

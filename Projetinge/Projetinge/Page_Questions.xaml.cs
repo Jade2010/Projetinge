@@ -1,4 +1,4 @@
-﻿using Android.Content.Res;
+using Android.Content.Res;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
