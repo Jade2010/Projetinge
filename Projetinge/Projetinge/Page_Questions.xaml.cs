@@ -23,23 +23,41 @@ namespace Projetinge
             bouton1.Clicked += async (sender, args) =>
             {
                 bouton1.BackgroundColor = question_responses[2] == "oui"? Color.FromHex("01FE32") :Color.FromHex("FE0101");
+                show_good_responses(question_responses);
             };
             bouton2.Clicked += async (sender, args) =>
             {
                 bouton2.BackgroundColor = question_responses[4] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
+                show_good_responses(question_responses);
             };
-            bouton3.Clicked += async (sender, args) =>
+            bouton3.Clicked += async(sender, args) =>
             {
                 bouton3.BackgroundColor = question_responses[6] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
+                show_good_responses(question_responses);
             };
             bouton4.Clicked += async (sender, args) =>
             {
                 bouton4.BackgroundColor = question_responses[8] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
+                show_good_responses(question_responses);
             };
             bouton5.Clicked += async (sender, args) =>
             {
                 await Navigation.PushAsync(new Page_Theme());
             };
+        }
+
+        private void show_good_responses(List<String> question_responses)
+        {
+            Button[] button_list = { bouton1, bouton2, bouton3, bouton4 };
+            for (int i = 1; i < 5; i++)
+            {
+                if(question_responses[i*2] == "oui")
+                {
+                    button_list[i-1].BackgroundColor = Color.FromHex("01FE32");
+                }
+                button_list[i-1].IsEnabled = false;
+            }
+
         }
 
         private int get_question_index()

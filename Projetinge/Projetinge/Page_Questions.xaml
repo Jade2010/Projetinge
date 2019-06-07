@@ -13,10 +13,10 @@
                 </Grid.RowDefinitions>
 
                 <!-- Ligne 0 : label de thème -->
-                <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
                     <Label Text="Thème question" 
                 x:Name="labelTheme"
-                HorizontalOptions="StartAndExpand"
+                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"
                 FontSize="Large"
