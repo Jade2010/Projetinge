@@ -43,8 +43,7 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
+                FontSize="Medium"
                 HeightRequest="150"/>
 
                 </ContentView>
@@ -55,8 +54,7 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand" 
                 IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
+               FontSize="Medium"
                 HeightRequest="150"/>
 
                 </ContentView>
@@ -69,8 +67,7 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand" 
                 IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
+               FontSize="Medium"
                 HeightRequest="150"/>
 
                 </ContentView>
@@ -83,15 +80,14 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"
+               FontSize="Medium"
                 HeightRequest="150"/>
 
                 </ContentView>
 
                 <!-- Ligne 4 -->
                 <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
-                    <Button Text="NextQuestion" 
+                    <Button Text="Question suivante" 
                 x:Name="bouton5"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
