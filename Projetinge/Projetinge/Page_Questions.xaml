@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Projetinge.QuestionPage">
-  <ContentView.Content>
-      <StackLayout>
+             x:Class="Projetinge.Page_Questions">
+    <ContentPage.Content>
+        <StackLayout>
             <Grid ColumnSpacing="10" Padding="20" RowSpacing="30">
                 <Grid.RowDefinitions>
                     <RowDefinition Height= "Auto" />
@@ -80,5 +80,5 @@
 
             </Grid>
         </StackLayout>
-  </ContentView.Content>
-</ContentView>
+    </ContentPage.Content>
+</ContentPage>

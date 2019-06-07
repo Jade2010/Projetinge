@@ -1,25 +1,25 @@
-﻿using System;
+﻿using Android.Content.Res;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Configuration;
+using static Android.InputMethodServices.InputMethodService;
 
 namespace Projetinge
 {
     public partial class MainPage : ContentPage
     {
-        /*label_
-         * bouton1
-         * bouton2
-         * bouton3
-         * bouton4
-         * 
-         */
-
         public MainPage()
         {
             InitializeComponent();
+            boutonJouer.Clicked += async (sender, args) =>
+            {
+                   await Navigation.PushAsync(new Page_Theme());
+            };
 
         }
 
@@ -30,6 +30,8 @@ namespace Projetinge
         public void changerTheme(String Sbouton1, String Sbouton2, String Sbouton3, String Sbouton4, Color Cbouton1, Color Cbouton2, Color Cbouton3, Color Cbouton4)
         {
            
+              
+              
         }
 
 

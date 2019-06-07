@@ -10,8 +10,7 @@ namespace Projetinge
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Page_Theme());
         }
 
         protected override void OnStart()
