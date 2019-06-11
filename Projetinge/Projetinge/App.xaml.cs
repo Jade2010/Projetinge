@@ -7,6 +7,8 @@ namespace Projetinge
 {
     public partial class App : Application
     {
+        int score;
+
         public App()
         {
             InitializeComponent();

@@ -14,7 +14,7 @@ namespace Projetinge
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page_Questions : ContentPage
     {
-        public Page_Questions(String theme)
+        public Page_Questions(String theme,int score,int question_number)
         {
             InitializeComponent();
             List<String> question_responses = new List<string>();
@@ -23,26 +23,38 @@ namespace Projetinge
             bouton1.Clicked += async (sender, args) =>
             {
                 bouton1.BackgroundColor = question_responses[2] == "oui"? Color.FromHex("01FE32") :Color.FromHex("FE0101");
+                score = question_responses[2] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
             };
             bouton2.Clicked += async (sender, args) =>
             {
                 bouton2.BackgroundColor = question_responses[4] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
+                score = question_responses[4] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
             };
             bouton3.Clicked += async(sender, args) =>
             {
                 bouton3.BackgroundColor = question_responses[6] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
+                score = question_responses[8] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
             };
             bouton4.Clicked += async (sender, args) =>
             {
                 bouton4.BackgroundColor = question_responses[8] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
+                score = question_responses[8] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
             };
             bouton5.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Page_Theme());
+                if (question_number < 8)
+                {
+                    await Navigation.PushAsync(new Page_Theme(score, question_number));
+                }
+                else
+                {
+                    await Navigation.PushAsync(new Score_page(score));
+                }
+               
             };
         }
 

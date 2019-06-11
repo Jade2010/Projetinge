@@ -13,25 +13,26 @@ namespace Projetinge
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page_Theme : ContentPage
     {
-        public Page_Theme()
+        public Page_Theme(int score,int question_number)
         {
             InitializeComponent();
             changerTheme(set_theme());
+            question_number++;
             bouton1.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Page_Questions(bouton1.Text));
+                await Navigation.PushAsync(new Page_Questions(bouton1.Text,score, question_number));
             };
             bouton2.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Page_Questions(bouton2.Text));
+                await Navigation.PushAsync(new Page_Questions(bouton2.Text,score, question_number));
             };
             bouton3.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Page_Questions(bouton3.Text));
+                await Navigation.PushAsync(new Page_Questions(bouton3.Text,score, question_number));
             };
             bouton4.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Page_Questions(bouton4.Text));
+                await Navigation.PushAsync(new Page_Questions(bouton4.Text,score, question_number));
             };
         }
 

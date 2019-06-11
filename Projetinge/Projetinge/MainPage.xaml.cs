@@ -15,10 +15,12 @@ namespace Projetinge
     {
         public MainPage()
         {
+            int score = 0;
+            int question_number = 0;
             InitializeComponent();
             boutonJouer.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Page_Theme());
+                await Navigation.PushAsync(new Page_Theme(score,question_number));
             };
         }
 
