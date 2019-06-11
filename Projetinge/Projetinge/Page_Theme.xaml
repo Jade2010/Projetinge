@@ -12,6 +12,31 @@
                     <RowDefinition Height= "Auto" />
                 </Grid.RowDefinitions>
 
+
+                <!-- Ligne 0 -->
+                <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" MinimumHeightRequest="10">
+                    <Label Text="Q : 1/8" 
+                x:Name="labelNBQuestion"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"
+                FontSize="Large"
+                FontAttributes="Bold"/>
+                </ContentView>
+
+
+                <ContentView Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="1" MinimumHeightRequest="10">
+                    <Label Text="Score : 0" 
+                x:Name="labelScore"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"
+                FontSize="Large"
+                FontAttributes="Bold"/>
+                </ContentView>
+
+
+
                 <!-- Ligne 1 -->
                 <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
                     <Label Text="Choisissez le thème de la question" 

@@ -44,7 +44,8 @@
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"
                 FontSize="Medium"
-                HeightRequest="150"/>
+                HeightRequest="150"
+                            WidthRequest="200"/>
 
                 </ContentView>
 
@@ -55,7 +56,8 @@
                 VerticalOptions="CenterAndExpand" 
                 IsVisible="true"
                FontSize="Medium"
-                HeightRequest="150"/>
+                HeightRequest="150"
+                            WidthRequest="200"/>
 
                 </ContentView>
 
@@ -68,7 +70,8 @@
                 VerticalOptions="CenterAndExpand" 
                 IsVisible="true"
                FontSize="Medium"
-                HeightRequest="150"/>
+                HeightRequest="150"
+                            WidthRequest="200"/>
 
                 </ContentView>
 
@@ -81,7 +84,8 @@
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"
                FontSize="Medium"
-                HeightRequest="150"/>
+                HeightRequest="150"
+                            WidthRequest="200"/>
 
                 </ContentView>
 
@@ -93,7 +97,8 @@
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"
                 FontSize="Large"
-                FontAttributes="Bold"/>
+                FontAttributes="Bold"
+                            CornerRadius="10"/>
                 </ContentView>
 
 
