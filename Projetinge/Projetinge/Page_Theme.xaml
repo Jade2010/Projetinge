@@ -24,6 +24,15 @@
                 FontAttributes="Bold"/>
                 </ContentView>
 
+                
+                <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Image 
+                x:Name="imageLogo"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"/>
+                </ContentView>
+
 
                 <ContentView Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="1" MinimumHeightRequest="10">
                     <Label Text="Score : 0" 
