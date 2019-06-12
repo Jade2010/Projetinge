@@ -20,6 +20,7 @@ namespace Projetinge
         public MainPage()
         {
             InitializeComponent();
+            
 
         }
 
