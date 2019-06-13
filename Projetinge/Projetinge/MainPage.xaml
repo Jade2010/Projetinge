@@ -6,7 +6,22 @@
 
     <StackLayout>
 
-        <Button Text="JOUER"
+        <Grid ColumnSpacing="10" Padding="20" RowSpacing="60">
+            <Grid.RowDefinitions>
+                <RowDefinition Height= "Auto" />
+            </Grid.RowDefinitions>
+
+            <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <Image Source="LogoHub.png"
+                x:Name="imageLogo"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                IsVisible="true"/>
+            </ContentView>
+
+
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <Button Text="JOUER"
             x:Name="boutonJouer"
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand"
@@ -15,8 +30,13 @@
             FontAttributes="Bold"
             HeightRequest="200"
             WidthRequest="200"
-            CornerRadius="100"/>
+            CornerRadius="100"
+            BorderWidth="8"
+            BorderColor="#DCD45F"           />
+            </ContentView>
 
+
+        </Grid>
     </StackLayout>
 
 </ContentPage>
