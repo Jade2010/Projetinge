@@ -2,18 +2,20 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Projetinge
 {
     public partial class App : Application
     {
-        int score;
-
         public App()
         {
+            
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage());
         }
+
+
 
         protected override void OnStart()
         {

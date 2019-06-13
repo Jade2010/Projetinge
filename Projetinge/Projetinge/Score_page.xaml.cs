@@ -1,24 +1,36 @@
-﻿using System;
+﻿using Firebase.Database;
+using Firebase.Database.Query;
+using Java.Nio.FileNio;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFirebase.Model;
 
 namespace Projetinge
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Score_page : ContentPage
     {
+        FirebaseClient firebase = new FirebaseClient("https://quizzatlas.firebaseio.com/");
+        
         public Score_page(int score,List<String> list_string)
         {
+
             InitializeComponent();
             label.Text = score.ToString();
             labeltheme.Text = get_preference(list_string);
+
+            boutonJouer.Clicked += async (sender, args) =>
+            {
+                _ = AddPreference("toto", "titi");
+                await DisplayAlert("Success", "Person Added Successfully", "OK");
+
+            };
+
         }
-        
+
         public String get_preference(List<String> list_string)
         {
             String preference="";
@@ -45,5 +57,13 @@ namespace Projetinge
             }
             return preference;
         }
+
+        public async Task AddPreference(string name, string centre)
+        {
+            await firebase
+              .Child("quizzatlas")
+              .PostAsync(new CentreInteret() { Name = name, Centre = centre });
+        }
+
     }
-}
+}  

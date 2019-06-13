@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "604600895703",
+    "firebase_url": "https://quizzatlas.firebaseio.com",
+    "project_id": "quizzatlas",
+    "storage_bucket": "quizzatlas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604600895703:android:37757ee628f9d6b8",
+        "android_client_info": {
+          "package_name": "com.companyname.Projetinge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604600895703-qv42tp2lb9euaojqf7hdctppfgmrqj33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Qf4qmlq2lotoK8qDxWWCnneXRFPU1_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604600895703-qv42tp2lb9euaojqf7hdctppfgmrqj33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

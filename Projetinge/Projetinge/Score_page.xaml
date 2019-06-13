@@ -16,6 +16,18 @@
                 x:Name="labeltheme"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="JOUER"
+            x:Name="boutonJouer"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            IsVisible="true"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HeightRequest="200"
+            WidthRequest="200"
+            CornerRadius="100"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

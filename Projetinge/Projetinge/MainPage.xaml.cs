@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Configuration;
 using static Android.InputMethodServices.InputMethodService;
+using XamarinFirebase.Model;
+
 
 namespace Projetinge
 {
