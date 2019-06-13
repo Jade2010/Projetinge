@@ -36,13 +36,13 @@
                 </ContentView>
 
 
-                <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                    <Image Source="assets/logo.png"
+               <!-- <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <Image Source="ms-appx:///Assets/Imgs/logo.png"
                 x:Name="imageLogo"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"/>
-                </ContentView>
+                </ContentView> -->
 
 
                 <!-- Ligne 1 -->
@@ -59,7 +59,7 @@
 
 
                 <!-- Ligne 2 -->
-                <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
+                <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
                     <Label Text="Voici la question" 
                 x:Name="label_"
                 HorizontalOptions="CenterAndExpand"
@@ -71,7 +71,7 @@
 
 
                 <!-- Ligne 3 -->
-                <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton1"
                 x:Name="bouton1"
                 HorizontalOptions="CenterAndExpand"
@@ -83,7 +83,7 @@
 
                 </ContentView>
 
-                <ContentView Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton2"
                 x:Name="bouton2"
                 HorizontalOptions="CenterAndExpand"
@@ -97,7 +97,7 @@
 
 
                 <!-- Ligne 4 -->
-                <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton3"
                 x:Name="bouton3"
                 HorizontalOptions="CenterAndExpand"
@@ -111,7 +111,7 @@
 
 
 
-                <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton4"
                 x:Name="bouton4"       
                 HorizontalOptions="CenterAndExpand"
@@ -124,7 +124,7 @@
                 </ContentView>
 
                 <!-- Ligne 5 -->
-                <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
+                <ContentView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
                     <Button Text="Question suivante" 
                 x:Name="bouton5"
                 HorizontalOptions="CenterAndExpand"

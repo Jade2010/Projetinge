@@ -14,45 +14,56 @@ namespace Projetinge
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page_Questions : ContentPage
     {
-        public Page_Questions(String theme,int score,int question_number)
+        public Page_Questions(String theme,int score,int question_number,List<String> list_string)
         {
             InitializeComponent();
             List<String> question_responses = new List<string>();
             question_responses = get_question(theme, get_question_index());
             changerQuestion(question_responses);
+            labelTheme.Text = theme;
+            labelScore.Text = "S :" + score;
+            labelNBQuestion.Text = "Q :"+question_number.ToString() + "/8";
             bouton1.Clicked += async (sender, args) =>
             {
                 bouton1.BackgroundColor = question_responses[2] == "oui"? Color.FromHex("01FE32") :Color.FromHex("FE0101");
                 score = question_responses[2] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
+                labelScore.Text = "S :" + score;
+
             };
             bouton2.Clicked += async (sender, args) =>
             {
                 bouton2.BackgroundColor = question_responses[4] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
                 score = question_responses[4] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
+                labelScore.Text = "S :" + score;
+
             };
             bouton3.Clicked += async(sender, args) =>
             {
                 bouton3.BackgroundColor = question_responses[6] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
-                score = question_responses[8] == "oui" ? score + 5 : score;
+                score = question_responses[6] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
+                labelScore.Text = "S :" + score;
+
             };
             bouton4.Clicked += async (sender, args) =>
             {
                 bouton4.BackgroundColor = question_responses[8] == "oui" ? Color.FromHex("01FE32") : Color.FromHex("FE0101");
                 score = question_responses[8] == "oui" ? score + 5 : score;
                 show_good_responses(question_responses);
+                labelScore.Text = "S :" + score;
+
             };
             bouton5.Clicked += async (sender, args) =>
             {
                 if (question_number < 8)
                 {
-                    await Navigation.PushAsync(new Page_Theme(score, question_number));
+                    await Navigation.PushAsync(new Page_Theme(score, question_number,list_string));
                 }
                 else
                 {
-                    await Navigation.PushAsync(new Score_page(score));
+                    await Navigation.PushAsync(new Score_page(score,list_string));
                 }
                
             };
@@ -69,7 +80,7 @@ namespace Projetinge
                 }
                 button_list[i-1].IsEnabled = false;
             }
-
+           
         }
 
         private int get_question_index()
