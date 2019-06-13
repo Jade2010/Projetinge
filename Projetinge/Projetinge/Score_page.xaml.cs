@@ -19,13 +19,17 @@ namespace Projetinge
         {
 
             InitializeComponent();
-            BackgroundImage = "HachingBackgound.png";
-            labelScoreFinal.Text = "Votre score est de :" + score.ToString();
+            BackgroundImageSource = "HackingBackgound.png";
+            labelScoreFinal.Text = "Votre score est de : " + score.ToString();
 
             boutonSave.Clicked += async (sender, args) =>
             {
-                _ = AddPreference("toto", "titi");
-                await DisplayAlert("Success", "Person Added Successfully", "OK");
+                if (textClavier.Text!="")
+                { 
+                    _ = AddPreference(textClavier.Text, get_preference(list_string));
+                    await DisplayAlert("Success", "Votre score a été enregistré ! ", "OK");
+                    boutonSave.IsEnabled = false;
+                }
 
             };
 

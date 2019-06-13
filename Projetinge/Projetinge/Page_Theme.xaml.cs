@@ -20,6 +20,7 @@ namespace Projetinge
             {
                 list_string.Add(bouton1.Text);
                 await Navigation.PushAsync(new Page_Questions(bouton1.Text,score, question_number, list_string));
+                new Page_Questions(bouton1.Text, score, question_number, list_string);
             };
             bouton2.Clicked += async (sender, args) =>
             {
@@ -29,12 +30,12 @@ namespace Projetinge
             bouton3.Clicked += async (sender, args) =>
             {
                 list_string.Add(bouton3.Text);
-                await Navigation.PushAsync(new Page_Questions(bouton3.Text,score, question_number, list_string));
+               await Navigation.PushAsync(new Page_Questions(bouton3.Text,score, question_number, list_string));
             };
             bouton4.Clicked += async (sender, args) =>
             {
                 list_string.Add(bouton4.Text);
-                await Navigation.PushAsync(new Page_Questions(bouton4.Text,score, question_number, list_string));
+               await Navigation.PushAsync(new Page_Questions(bouton4.Text,score, question_number, list_string));
             };
         }
 

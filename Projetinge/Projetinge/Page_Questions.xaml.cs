@@ -60,10 +60,12 @@ namespace Projetinge
                 if (question_number < 8)
                 {
                     await Navigation.PushAsync(new Page_Theme(score, question_number,list_string));
+                    
                 }
                 else
                 {
                     await Navigation.PushAsync(new Score_page(score,list_string));
+                    
                 }
                
             };

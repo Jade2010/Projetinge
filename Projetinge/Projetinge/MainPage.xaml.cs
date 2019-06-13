@@ -24,6 +24,7 @@ namespace Projetinge
             boutonJouer.Clicked += async (sender, args) =>
             {                
                 await Navigation.PushAsync(new Page_Theme(score,question_number, list_string));
+                new Page_Theme(score, question_number, list_string);
             };
         }
 
