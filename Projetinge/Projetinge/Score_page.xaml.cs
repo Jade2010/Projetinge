@@ -19,10 +19,10 @@ namespace Projetinge
         {
 
             InitializeComponent();
-            label.Text = score.ToString();
-            labeltheme.Text = get_preference(list_string);
+            BackgroundImage = "HachingBackgound.png";
+            labelScoreFinal.Text = "Votre score est de :" + score.ToString();
 
-            boutonJouer.Clicked += async (sender, args) =>
+            boutonSave.Clicked += async (sender, args) =>
             {
                 _ = AddPreference("toto", "titi");
                 await DisplayAlert("Success", "Person Added Successfully", "OK");

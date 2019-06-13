@@ -7,26 +7,71 @@
              x:Class="Projetinge.Score_page">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                x:Name="label"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
 
-            <Label Text="Welcome to Xamarin.Forms!"
-                x:Name="labeltheme"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid ColumnSpacing="10" Padding="20" RowSpacing="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height= "Auto" />
+                </Grid.RowDefinitions>
 
-            <Button Text="JOUER"
-            x:Name="boutonJouer"
-            HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand"
-            IsVisible="true"
-            FontSize="Large"
-            FontAttributes="Bold"
-            HeightRequest="200"
-            WidthRequest="200"
-            CornerRadius="100"/>
+                <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Image Source="logo.png"
+                x:Name="imageLogo"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                IsVisible="true"/>
+                </ContentView>
+
+
+
+                <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Label Text="Votre score est de : 0" 
+                x:Name="labelScoreFinal"
+                TextColor="#DCD45F"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"
+                FontSize="Large"
+                FontAttributes="Bold"/>
+                </ContentView>
+
+                <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Label Text="Sauvegarder votre score : " 
+                x:Name="labelnul"
+                TextColor="#DCD45F"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"
+                FontSize="Large"
+                FontAttributes="Bold"/>
+                </ContentView>
+
+                <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Entry Text=""
+               Placeholder="Username"
+               x:Name="textClavier"
+                TextColor="#EBE264"
+                PlaceholderColor="#DCD45F"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"
+               />
+                </ContentView>
+
+                <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Button Text="Sauvegarder"
+                x:Name="boutonSave"
+                BorderWidth="2"
+                BorderRadius="10"
+                BorderColor="#DCD45F"
+                BackgroundColor="#E8E8E8"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="true"
+                FontSize="Large" />
+                </ContentView>
+
+            </Grid>
+
 
         </StackLayout>
     </ContentPage.Content>
