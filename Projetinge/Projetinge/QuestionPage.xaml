@@ -12,13 +12,14 @@
                     <RowDefinition Height= "Auto" />
                 </Grid.RowDefinitions>
 
+
                 <!-- Ligne 0 : score question et logo -->
 
                 <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" MinimumHeightRequest="10">
                     <Label Text="Q : 1/8" 
                 x:Name="labelNBQuestion"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"/>
@@ -29,7 +30,7 @@
                     <Label Text="S : 0" 
                 x:Name="labelScore"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"/>
@@ -37,21 +38,21 @@
 
 
                 <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                    <Image 
+                    <Image Source="logo.png"
                 x:Name="imageLogo"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
                 IsVisible="true"/>
                 </ContentView>
 
 
                 <!-- Ligne 1 -->
 
-                <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                    <Label Text="Thème question" 
+                <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Label Text="Géographie" 
                 x:Name="labelTheme"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="EndAndExpand"
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"/>
@@ -71,7 +72,7 @@
 
 
                 <!-- Ligne 3 -->
-                <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="50">
                     <Button Text="SuperBouton1"
                 x:Name="bouton1"
                 HorizontalOptions="CenterAndExpand"
@@ -83,7 +84,7 @@
 
                 </ContentView>
 
-                <ContentView Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="50">
                     <Button Text="SuperBouton2"
                 x:Name="bouton2"
                 HorizontalOptions="CenterAndExpand"
@@ -97,7 +98,7 @@
 
 
                 <!-- Ligne 4 -->
-                <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="50">
                     <Button Text="SuperBouton3"
                 x:Name="bouton3"
                 HorizontalOptions="CenterAndExpand"
@@ -111,7 +112,7 @@
 
 
 
-                <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="50">
                     <Button Text="SuperBouton4"
                 x:Name="bouton4"       
                 HorizontalOptions="CenterAndExpand"

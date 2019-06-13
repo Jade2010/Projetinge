@@ -20,11 +20,7 @@ namespace Projetinge
         public MainPage()
         {
             InitializeComponent();
-            Image background = new Image();
-            background.Source= Device.RuntimePlatform == Device.Android ? ImageSource.FromFile("DecoderBackground.png") : ImageSource.FromFile("Images/DecoderBackground.png");
-
-            String test = "DecoderBackground.png";
-            BackgroundImage = test;
+            BackgroundImage = "HachingBackgound.png";
             //imageLogo.Source = Device.RuntimePlatform == Device.Android ? ImageSource.FromFile("logo.png") : ImageSource.FromFile("Images/logo.png");
             //imageLogo.Source = Device.RuntimePlatform == Device.Android ? ImageSource.FromFile("Images/logo.png") : ImageSource.FromFile("Drawable/Images/logo.png");
 
