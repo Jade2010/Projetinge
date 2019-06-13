@@ -12,6 +12,7 @@ namespace Projetinge
         public Page_Theme(int score,int question_number, List<String> list_string)
         {
             InitializeComponent();
+            BackgroundImageSource = "DecoderBackground.png";
             changerTheme(set_theme());
             question_number++;
             labelScore.Text = "S :"+score.ToString();

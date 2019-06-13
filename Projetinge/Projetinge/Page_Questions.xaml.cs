@@ -16,6 +16,7 @@ namespace Projetinge
     {
         public Page_Questions(String theme,int score,int question_number,List<String> list_string)
         {
+            BackgroundImageSource = "backgroundinfiltration.png";
             InitializeComponent();
             List<String> question_responses = new List<string>();
             question_responses = get_question(theme, get_question_index());

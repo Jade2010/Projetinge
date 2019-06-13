@@ -7,21 +7,41 @@
              x:Class="Projetinge.Page_Questions">
     <ContentPage.Content>
         <StackLayout>
-            <Grid ColumnSpacing="10" Padding="20" RowSpacing="30">
+            <Grid ColumnSpacing="10" Padding="20" RowSpacing="20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height= "Auto" />
                 </Grid.RowDefinitions>
 
-                <!-- Ligne 0 : score question et logo -->
+                <!-- Ligne 0 : label de thème -->
+                <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Label Text="Thème question" 
+                x:Name="labelTheme"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="EndAndExpand"
+                IsVisible="true"
+                FontSize="Large"
+                FontAttributes="Bold"
+                TextColor="#DCD45F"/>
+                </ContentView>
+
+                <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                    <Image Source="logo.png"
+                x:Name="imageLogo"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                IsVisible="true"
+                  />
+                </ContentView>
 
                 <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" MinimumHeightRequest="10">
                     <Label Text="Q : 1/8" 
                 x:Name="labelNBQuestion"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
                 IsVisible="true"
                 FontSize="Large"
-                FontAttributes="Bold"/>
+                FontAttributes="Bold"
+                TextColor="#DCD45F"/>
                 </ContentView>
 
 
@@ -29,49 +49,30 @@
                     <Label Text="S : 0" 
                 x:Name="labelScore"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
                 IsVisible="true"
                 FontSize="Large"
-                FontAttributes="Bold"/>
+                FontAttributes="Bold"
+                TextColor="#DCD45F"/>
                 </ContentView>
-
-
-               <!-- <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                <Image Source="ms-appx:///Assets/Imgs/logo.png"
-                x:Name="imageLogo"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                IsVisible="true"/>
-                </ContentView> -->
 
 
                 <!-- Ligne 1 -->
-
-                <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
-                    <Label Text="Thème question" 
-                x:Name="labelTheme"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                IsVisible="true"
-                FontSize="Large"
-                FontAttributes="Bold"/>
-                </ContentView>
-
-
-                <!-- Ligne 2 -->
-                <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
+                <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
                     <Label Text="Voici la question" 
                 x:Name="label_"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 IsVisible="true"
-                FontSize="Large"
+                FontSize="Medium"
+                TextColor="#DCD45F"
+
                 />
                 </ContentView>
 
 
-                <!-- Ligne 3 -->
-                <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <!-- Ligne 2 -->
+                <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton1"
                 x:Name="bouton1"
                 HorizontalOptions="CenterAndExpand"
@@ -79,11 +80,13 @@
                 IsVisible="true"
                 FontSize="Medium"
                 HeightRequest="150"
-                            WidthRequest="200"/>
+                WidthRequest="200"
+                TextColor="#DCD45F"
+                CornerRadius="8"/>
 
                 </ContentView>
 
-                <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton2"
                 x:Name="bouton2"
                 HorizontalOptions="CenterAndExpand"
@@ -91,13 +94,15 @@
                 IsVisible="true"
                FontSize="Medium"
                 HeightRequest="150"
-                            WidthRequest="200"/>
+                WidthRequest="200"
+                TextColor="#DCD45F"
+                CornerRadius="8"/>
 
                 </ContentView>
 
 
-                <!-- Ligne 4 -->
-                <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <!-- Ligne 3 -->
+                <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton3"
                 x:Name="bouton3"
                 HorizontalOptions="CenterAndExpand"
@@ -105,13 +110,15 @@
                 IsVisible="true"
                FontSize="Medium"
                 HeightRequest="150"
-                            WidthRequest="200"/>
+                WidthRequest="200" 
+                TextColor="#DCD45F"
+                CornerRadius="8"/>
 
                 </ContentView>
 
 
 
-                <ContentView Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
+                <ContentView Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" MinimumHeightRequest="10">
                     <Button Text="SuperBouton4"
                 x:Name="bouton4"       
                 HorizontalOptions="CenterAndExpand"
@@ -119,12 +126,14 @@
                 IsVisible="true"
                FontSize="Medium"
                 HeightRequest="150"
-                            WidthRequest="200"/>
+                WidthRequest="200"
+                TextColor="#DCD45F"
+                CornerRadius="8"/>
 
                 </ContentView>
 
-                <!-- Ligne 5 -->
-                <ContentView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
+                <!-- Ligne 4 -->
+                <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" MinimumHeightRequest="10">
                     <Button Text="Question suivante" 
                 x:Name="bouton5"
                 HorizontalOptions="CenterAndExpand"
@@ -132,7 +141,8 @@
                 IsVisible="true"
                 FontSize="Large"
                 FontAttributes="Bold"
-                            CornerRadius="10"/>
+                CornerRadius="15"
+                TextColor="#DCD45F"/>
                 </ContentView>
 
 

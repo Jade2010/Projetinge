@@ -17,6 +17,7 @@ namespace Projetinge
     {
         public MainPage()
         {
+            BackgroundImageSource = "background.png";
             int score = 0;
             int question_number = 0;
             List<String> list_string = new List<string>();
